@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 2px solid #ccc;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a4e69;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+form input, form select, form button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    flex: 1;
+}
+
+form input[type="text"], form input[type="number"] {
+    flex: 2;
+}
+
+form button {
+    background-color: #4a4e69;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #9a8c98;
+}
+
+/* Table styling */
+.expense-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+}
+
+.expense-table th, .expense-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: #f8f8ff;
+}
+
+.expense-table th {
+    background-color: #4a4e69;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.expense-table td {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Total amount styling */
+.total-amount {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #4a4e69;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+}
+
+/* Filter section styling */
+.filter {
+    margin-bottom: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.filter label {
+    font-weight: bold;
+    color: #4a4e69;
+}
+
+.filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
